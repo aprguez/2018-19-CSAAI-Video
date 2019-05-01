@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="s" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Mouse 01</title>
-    <script src="mouse-01.js"></script>
+    <title>Práctica 4</title>
+    <script src="video.js"></script>
   </head>
+
   <body onload="main();">
-    <p id="parrafo">Pasa el ratón por encima de este párrafo</p>
+
+    <video id="video_1" autoplay loop muted>
+      <source src="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente1.mp4"/>
+    </video>
+
+    <video id="video_2" autoplay loop muted>
+      <source src="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente2.mp4"/>
+    </video>
+
+    <video id="video_3" autoplay loop muted>
+      <source src="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente3.mp4"/>
+    </video>
+
+
+  <div>
+    <button type="button" id="plano1">CÁMARA 1</button>
+    <button type="button" id="plano2">CÁMARA 2</button>
+    <button type="button" id="plano3">CÁMARA 3</button>
+  </div>
+
+  <div>
+    <video id="display" autoplay loop muted ></video>
+  </div>
+
   </body>
 </html>
